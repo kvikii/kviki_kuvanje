@@ -10,9 +10,11 @@ ESX.RegisterServerCallback('kviki:burgershot1', function(source,cb,stahoces)
 			for groupName, stahoces in pairs(Config.Burger) do
 			for _,itemName in pairs(stahoces.items) do
 	if xPlayer.getInventoryItem(itemName).count >= 1 then
+		xPlayer.removeInventoryItem(itemName, 1)
 		cb(true, stahoces)
 	else
 		cb(false)
+		break
 	end
 end
 end
