@@ -68,6 +68,8 @@ Citizen.CreateThread(function()
 
 ---- BURGER PRAVLJENJE PROGRESS
 RegisterNetEvent("kviki:burger", function()
+		ESX.TriggerServerCallback('kviki:burgershot1',function(prosao)
+				if prosao then
   lib.progressCircle({
 		duration = 5000,
 		label = 'Pravis burger...',
@@ -81,8 +83,7 @@ RegisterNetEvent("kviki:burger", function()
 		},
 		anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', clip = 'machinic_loop_mechandplayer' },
 	}) 
-Wait(0)
-ESX.TriggerServerCallback('kviki:burgershot1',function()
+end
 end) 
 end)
 
