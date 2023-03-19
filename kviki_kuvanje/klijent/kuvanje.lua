@@ -44,24 +44,22 @@ Citizen.CreateThread(function()
 
  --- OX_LIB MENU --- MOZETE DA DODAJETE JOS EVENATA I MENIJEVA
   RegisterNetEvent('kviki:kuvanje1', function()
-	lib.registerContext({
-	  id = 'burgershot_menu',
-	  title = 'Burger Shot',
-	  options = {
-		{
-		  title = 'Hamburger',
-		  description = '1x Senf, 1x Meso, 1x Kruh',
-		  event = "kviki:burger",
-		}
-		-- {
-		-- 	title = 'KURAC',
-		-- 	description = 'KASTM EVENT PRIMJER',
-		-- 	event = "kviki:golikurac",
-		--   }
-	  }
-	})
-  
-	lib.showContext('burgershot_menu')
+     local table = {}
+
+    for k, v in pairs(Config.Burger) do
+        table[#table + 1] = {
+            title = 	v.label,
+			event = v.event,
+			description = v.description
+        }
+
+		lib.registerContext({
+			id = 'burgershot_menu',
+			title = 'Burger Shot',
+			options = table
+		})
+		lib.showContext('burgershot_menu')
+    end
   end)
 
 
