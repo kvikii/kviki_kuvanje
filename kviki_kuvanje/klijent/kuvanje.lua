@@ -81,8 +81,10 @@ RegisterNetEvent("kviki:burger", function()
 		},
 		anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', clip = 'machinic_loop_mechandplayer' },
 	}) 
+	else
+	ESX.ShowNotification('Nemas sastojke')
 end
-end) 
+end, 1) 
 end)
 
 
