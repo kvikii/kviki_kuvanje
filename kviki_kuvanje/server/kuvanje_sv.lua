@@ -5,18 +5,16 @@ print("kviki kao nesto kastm ukro vuletu skriptu")
 
 ---------------------------------------------------------------------
 
-ESX.RegisterServerCallback('kviki:burgershot1', function(source,cb,item)
+ESX.RegisterServerCallback('kviki:burgershot1', function(source,cb,broj)
 	local xPlayer = ESX.GetPlayerFromId(source)
-	if xPlayer.getInventoryItem('kruh').count >= 1 and xPlayer.getInventoryItem('senf').count >= 1 and xPlayer.getInventoryItem('meso').count >= 1 then
-	     xPlayer.removeInventoryItem('kruh',1)
-		xPlayer.removeInventoryItem('senf',1)
-		xPlayer.removeInventoryItem('meso',1)
-                xPlayer.addInventoryItem('burger',1)
+		
+for i, itemName in ipairs(Config.Burger[broj]) do
+	if xPlayer.getInventoryItem(itemName).count >= 1 then
 		cb(true)
 	else
 		cb(false)
-    xPlayer.showNotification("Nemate dovoljno sastojaka!")
 	end
+end
 end)
 
 
