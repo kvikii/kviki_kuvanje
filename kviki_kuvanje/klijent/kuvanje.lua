@@ -66,9 +66,8 @@ Citizen.CreateThread(function()
 
 ---- BURGER PRAVLJENJE PROGRESS
 RegisterNetEvent("kviki:burger", function()
-		for k, v in ipairs(Config.Burger) do
-			for i,v in pairs(burger) do
-local water = exports.ox_inventory:Search('slots', v.items)
+		for _, item in ipairs(Config.Burger.burger.items) do
+local water = exports.ox_inventory:Search('slots', item)
 if water >= 1 then
   lib.progressCircle({
 		duration = 5000,
@@ -85,7 +84,6 @@ if water >= 1 then
 	}) 
 	else
 	ESX.ShowNotification('Nemas sastojke')
-end
 end
 end
 end)
