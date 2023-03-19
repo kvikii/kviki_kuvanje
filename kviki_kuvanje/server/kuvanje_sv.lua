@@ -1,7 +1,7 @@
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj 
 end)
-print("kviki kao nesto kastm ukro vuletu skriptu")
+print("made by kviki#8628 & Sarmingooo#0850")
 
 ---------------------------------------------------------------------
 
