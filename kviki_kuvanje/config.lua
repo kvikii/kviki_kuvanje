@@ -15,3 +15,11 @@ Config.Mestokuvanje = {
             event = 'kviki:burgershot1',
            },  
 }
+
+Config.Burger = {
+[1] = {
+label = 'Hamburger',
+description = '1x Senf, 1x Meso, 1x Kruh',
+event = 'kviki:burger'
+}
+}
