@@ -1,3 +1,4 @@
 # kviki_kuvanje
 Skripta za kuvanje (kraftanje) itema
-Skripta je od vuleta kastm skriptera samo sto je ubacen ox_lib meni i njegov progress bar kome treba neka uzme
+Skripta je od vuleta kastm
+Ubaceno u nju ox_lib menu i progress circle (moze jos da se to sredi) ali ko oce neka koristi :D
