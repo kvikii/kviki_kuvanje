@@ -20,6 +20,21 @@ Config.Burger = {
 [1] = {
 label = 'Hamburger',
 description = '1x Senf, 1x Meso, 1x Kruh',
-event = 'kviki:burger'
+event = 'kviki:burger'¸,
+items = {
+'senf',
+'meso',
+'kruh'
+}
+},
+[2] = {
+label = 'Toast',
+description = '1x Senf, 1x Meso, 1x Kruh',
+event = 'kviki:burger',
+items = {
+'senf',
+'meso'
+}
+}
 }
 }
