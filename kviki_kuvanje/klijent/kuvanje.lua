@@ -70,7 +70,7 @@ RegisterNetEvent("kviki:burger", function()
 				if prosao then
   lib.progressCircle({
 		duration = 5000,
-		label = 'Pravis burger...',
+		label = 'Kuhas...',
 		useWhileDead = false,
 		canCancel = false,
 		disable = {
